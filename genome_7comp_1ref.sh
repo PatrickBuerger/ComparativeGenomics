@@ -164,7 +164,7 @@ sleep 3
 ## RAGTAG SETTINGS          # Available threads is currently set to 4
 ## BLAST SETTINGS           # Set the number of blast matches, keep at 5 for now to not make it overly complicated with the comparison
 
-OUTPUT_DIRECTORY="NEW_SCRIPT_TEST"
+OUTPUT_DIRECTORY="Genome_comparison"
 NUMBER_OF_CORES="4"
 WORD_SIZE_RAGTAG="5000"
 MAX_TARGET_SEQS="5"
