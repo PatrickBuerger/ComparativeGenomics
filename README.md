@@ -9,7 +9,7 @@ The script can be used to:
 <br>  
 
 Example output using Artemis (automatically generated visualisation):
-![Genome Comparison](https://github.com/PatrickBuerger/ComparativeGenomics/blob/main/Artemis_example_output.png)
+![Genome Comparison](https://github.com/PatrickBuerger/ComparativeGenomics/blob/main/Artemis_example_output2.png)
 <br>  
 <br>  
 
@@ -135,3 +135,9 @@ NUMBER_OF_CORES="4"
 WORD_SIZE_RAGTAG="5000"
 MAX_TARGET_SEQS="5"
 ```
+<br>  
+
+Example output using Artemis (automatically generated visualisation):
+![Genome Comparison](https://github.com/PatrickBuerger/ComparativeGenomics/blob/main/Artemis_example_output1.png)
+<br>  
+<br>  
