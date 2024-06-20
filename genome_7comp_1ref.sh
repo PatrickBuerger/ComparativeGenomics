@@ -203,18 +203,18 @@ DRAFT4="$7" 		    # Draft genome #4 (This is also a blast referral genome, which
 PARAMETER4="$8"		    # Minimal contig length threshold for DRAFT4
 
 DRAFT5="$9"			    # Draft genome #5
-PARAMETER5="$10"		# Minimal contig length threshold for DRAFT5
+PARAMETER5="${10}"		# Minimal contig length threshold for DRAFT5
 
-DRAFT6="$11"			# Draft genome #6
-PARAMETER6="$12"		# Minimal contig length threshold for DRAFT6
+DRAFT6="${11}"			# Draft genome #6
+PARAMETER6="${12}"		# Minimal contig length threshold for DRAFT6
 
-DRAFT7="$13"			# Draft genome #7
-PARAMETER7="$14"		# Minimal contig length threshold for DRAFT7
+DRAFT7="${13}"			# Draft genome #7
+PARAMETER7="${14}"		# Minimal contig length threshold for DRAFT7
 
-REFERENCE_GENOME="$15" 	# RagTag Reference genome
-PARAMETER8="$16"		# Minimal contig length threshold for RagTag REFERENCE_GENOME
+REFERENCE_GENOME="${15}" 	# RagTag Reference genome
+PARAMETER8="${16}"		# Minimal contig length threshold for RagTag REFERENCE_GENOME
 
-PARAMETER9="$17" 		# Blast word size
+PARAMETER9="${17}" 		# Blast word size
 
 
 
