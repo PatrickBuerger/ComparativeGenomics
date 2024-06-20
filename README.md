@@ -6,10 +6,11 @@ The script can be used to:
 - find genomic similarities (Blast)
 - visualise genomic comparisons (Artemis)
 <br>
-<br>  
-
-Example output using Artemis (automatically generated visualisation):
-![Genome Comparison](https://github.com/PatrickBuerger/ComparativeGenomics/blob/main/Artemis_example_output2.png)
+<p align="center">
+  <img src="https://github.com/PatrickBuerger/ComparativeGenomics/blob/main/Artemis_example_output2.png" height="500" />
+<br>Figure 1. Example output using Artemis for visualisaton (automatically generated).
+</p>
+</div>
 <br>  
 <br>  
 
@@ -137,7 +138,7 @@ MAX_TARGET_SEQS="5"
 ```
 <br>  
 
-Example output using Artemis (automatically generated visualisation):
-![Genome Comparison](https://github.com/PatrickBuerger/ComparativeGenomics/blob/main/Artemis_example_output1.png)
-<br>  
-<br>  
+<p align="center">
+  <img src="https://github.com/PatrickBuerger/ComparativeGenomics/blob/main/Artemis_example_output1.png" height="500" />
+<br>Figure 2. Example output using Artemis for visualisaton (automatically generated).
+</p>
