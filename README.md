@@ -1,11 +1,16 @@
 # Comparative Genomics Script
 The shell script performs large scale genomics comparisons between 7 genomes using RagTag and Blast visualises them in Artemis.
 The script can be used to:
-- filter the input data (seqkit)
-- rearrange scaffolds according to a reference (ragtag)
-- find genomic similarities (blast)
-- visualise genomic comparisons (artemis)
+- filter the input data (Seqkit)
+- rearrange scaffolds according to a reference (RagTag)
+- find genomic similarities (Blast)
+- visualise genomic comparisons (Artemis)
 <br>
+<br>  
+
+Example output using Artemis (automatically generated visualisation):
+![Genome Comparison](https://github.com/PatrickBuerger/ComparativeGenomics/blob/main/Artemis_example_output.png)
+<br>  
 <br>  
 
 ## INSTALL REQUIRED SOFTWARE
