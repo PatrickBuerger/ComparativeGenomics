@@ -2,7 +2,7 @@
 The shell script performs large scale genomics comparisons between 7 genomes using RagTag and Blast visualises them in Artemis.
 The script can be used to:
 - filter the input data (Seqkit)
-- rearrange scaffolds according to a reference (RagTag)
+- re-arrange scaffolds according to a reference (RagTag)
 - find genomic similarities (Blast)
 - visualise genomic comparisons (Artemis)
 <br>
