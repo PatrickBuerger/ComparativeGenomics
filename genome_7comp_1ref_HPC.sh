@@ -351,6 +351,7 @@ echo " "
 sleep 5
 
 
+# OUTPUT IS TOO CLUTTERED ON HPC, THEREFOR CODE HAS BEEN SILENCED
 ################################################################################
 ################################################################################
 #### HISTOGRAMS SHOWING SEQUENCE LENGTH DISTRIBUTION
