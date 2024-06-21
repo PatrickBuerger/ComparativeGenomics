@@ -1,0 +1,26 @@
+#!/bin/bash 
+#PBS -l walltime=5:00:00 
+#PBS -l mem=4GB 
+#PBS -l ncpus=4
+#PBS -l wd 
+#PBS -q normal 
+#PBS -P rm18
+#PBS -l storage=gdata/ey34+gdata/rm18
+
+source /g/data/ey34/conda/conda-setup.sh
+conda activate ragtag
+module load blast 
+
+sh genome_7comp_1ref_HPC.sh \
+        RagTag_SS1_clado_contigs_metaMDGB.fasta 5000000 \
+        RagTag_SS7_clado_contigs_metaMDGB.fasta 5000000 \
+        RagTag_SS8_clado_contigs_metaMDGB.fasta 5000000 \
+        RagTag_GCA_947184155.1_Cgoreaui_SCF055-01_genomic.fasta 5000000 \
+        RagTag_SS5_clado_contigs_metaMDGB.fasta 5000000 \
+        RagTag_SS9_clado_contigs_metaMDGB.fasta 5000000 \
+        RagTag_WT_clado_contigs_metaMDGB.fasta 5000000 \
+        RagTag_GCA_947184155.1_Cgoreaui_SCF055-01_genomic.fasta 5000000 5000 \
+    | tee log_file.txt
+
+
+
