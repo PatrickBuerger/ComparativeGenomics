@@ -356,74 +356,74 @@ sleep 5
 #### HISTOGRAMS SHOWING SEQUENCE LENGTH DISTRIBUTION
 ################################################################################
 ################################################################################
-echo "##################################################################################"
-echo "#### HISTOGRAM SEQUENCE LENGTH; DRAFT 1: "$DRAFT1""
-echo "##################################################################################"
-echo "############################### HISTOGRAM **AFTER** SEQUENCE REMOVAL"
-seqkit fx2tab -n -l ./"$DRAFT1"  | cut -f2- | hist -b 100 -s 10 -x
-echo " "
-echo " "
+#echo "##################################################################################"
+#echo "#### HISTOGRAM SEQUENCE LENGTH; DRAFT 1: "$DRAFT1""
+#echo "##################################################################################"
+#echo "############################### HISTOGRAM **AFTER** SEQUENCE REMOVAL"
+#seqkit fx2tab -n -l ./"$DRAFT1"  | cut -f2- | hist -b 100 -s 10 -x
+#echo " "
+#echo " "
 
-echo "##################################################################################"
-echo "#### HISTOGRAM SEQUENCE LENGTH; DRAFT 2: "$DRAFT2""
-echo "##################################################################################"
-echo "############################### HISTOGRAM **AFTER** SEQUENCE REMOVAL"
-seqkit fx2tab -n -l ./"$DRAFT2"  | cut -f2- | hist -b 100 -s 10 -x
-echo " "
-echo " "
+#echo "##################################################################################"
+#echo "#### HISTOGRAM SEQUENCE LENGTH; DRAFT 2: "$DRAFT2""
+#echo "##################################################################################"
+#echo "############################### HISTOGRAM **AFTER** SEQUENCE REMOVAL"
+#seqkit fx2tab -n -l ./"$DRAFT2"  | cut -f2- | hist -b 100 -s 10 -x
+#echo " "
+#echo " "
 
-echo "##################################################################################"
-echo "#### HISTOGRAM SEQUENCE LENGTH; DRAFT 3: "$DRAFT3""
-echo "##################################################################################"
-echo "############################### HISTOGRAM **AFTER** SEQUENCE REMOVAL"
-seqkit fx2tab -n -l ./"$DRAFT3"  | cut -f2- | hist -b 100 -s 10 -x
-echo " "
-echo " "
+#echo "##################################################################################"
+#echo "#### HISTOGRAM SEQUENCE LENGTH; DRAFT 3: "$DRAFT3""
+#echo "##################################################################################"
+#echo "############################### HISTOGRAM **AFTER** SEQUENCE REMOVAL"
+#seqkit fx2tab -n -l ./"$DRAFT3"  | cut -f2- | hist -b 100 -s 10 -x
+#echo " "
+#echo " "
 
-echo "##################################################################################"
-echo "#### HISTOGRAM SEQUENCE LENGTH; BLAST REFERENCE: "$DRAFT4""
-echo "##################################################################################"
-echo "############################### HISTOGRAM **AFTER** SEQUENCE REMOVAL"
-seqkit fx2tab -n -l ./"$DRAFT4"  | cut -f2- | hist -b 100 -s 10 -x
-echo " "
-echo " "
+#echo "##################################################################################"
+#echo "#### HISTOGRAM SEQUENCE LENGTH; BLAST REFERENCE: "$DRAFT4""
+#echo "##################################################################################"
+#echo "############################### HISTOGRAM **AFTER** SEQUENCE REMOVAL"
+#seqkit fx2tab -n -l ./"$DRAFT4"  | cut -f2- | hist -b 100 -s 10 -x
+#echo " "
+#echo " "
 
-echo "##################################################################################"
-echo "#### HISTOGRAM SEQUENCE LENGTH; DRAFT 5: "$DRAFT5""
-echo "##################################################################################"
-echo "############################### HISTOGRAM **AFTER** SEQUENCE REMOVAL"
-seqkit fx2tab -n -l ./"$DRAFT5"  | cut -f2- | hist -b 100 -s 10 -x
-echo " "
-echo " "
-echo " "
+#echo "##################################################################################"
+#echo "#### HISTOGRAM SEQUENCE LENGTH; DRAFT 5: "$DRAFT5""
+#echo "##################################################################################"
+#echo "############################### HISTOGRAM **AFTER** SEQUENCE REMOVAL"
+#seqkit fx2tab -n -l ./"$DRAFT5"  | cut -f2- | hist -b 100 -s 10 -x
+#echo " "
+#echo " "
+#echo " "
 
-echo "##################################################################################"
-echo "#### HISTOGRAM SEQUENCE LENGTH; DRAFT 6: "$DRAFT6""
-echo "##################################################################################"
-echo "############################### HISTOGRAM **AFTER** SEQUENCE REMOVAL"
-seqkit fx2tab -n -l ./"$DRAFT6"  | cut -f2- | hist -b 100 -s 10 -x
-echo " "
-echo " "
-echo " "
+#echo "##################################################################################"
+#echo "#### HISTOGRAM SEQUENCE LENGTH; DRAFT 6: "$DRAFT6""
+#echo "##################################################################################"
+#echo "############################### HISTOGRAM **AFTER** SEQUENCE REMOVAL"
+#seqkit fx2tab -n -l ./"$DRAFT6"  | cut -f2- | hist -b 100 -s 10 -x
+#echo " "
+#echo " "
+#echo " "
 
-echo "##################################################################################"
-echo "#### HISTOGRAM SEQUENCE LENGTH; DRAFT 7: "$DRAFT7""
-echo "##################################################################################"
-echo "############################### HISTOGRAM **AFTER** SEQUENCE REMOVAL"
-seqkit fx2tab -n -l ./"$DRAFT7"  | cut -f2- | hist -b 100 -s 10 -x
-echo " "
-echo " "
-echo " "
+#echo "##################################################################################"
+#echo "#### HISTOGRAM SEQUENCE LENGTH; DRAFT 7: "$DRAFT7""
+#echo "##################################################################################"
+#echo "############################### HISTOGRAM **AFTER** SEQUENCE REMOVAL"
+#seqkit fx2tab -n -l ./"$DRAFT7"  | cut -f2- | hist -b 100 -s 10 -x
+#echo " "
+#echo " "
+#echo " "
 
-echo "##################################################################################"
-echo "#### HISTOGRAM SEQUENCE LENGTH; RagTag Reference: "$REFERENCE_GENOME""
-echo "##################################################################################"
-echo "############################### HISTOGRAM **AFTER** SEQUENCE REMOVAL"
-seqkit fx2tab -n -l ./"$REFERENCE_GENOME"  | cut -f2- | hist -b 100 -s 10 -x
-echo " "
-echo " "
-echo " "
-sleep 3
+#echo "##################################################################################"
+#echo "#### HISTOGRAM SEQUENCE LENGTH; RagTag Reference: "$REFERENCE_GENOME""
+#echo "##################################################################################"
+#echo "############################### HISTOGRAM **AFTER** SEQUENCE REMOVAL"
+#seqkit fx2tab -n -l ./"$REFERENCE_GENOME"  | cut -f2- | hist -b 100 -s 10 -x
+#echo " "
+#echo " "
+#echo " "
+#sleep 3
 
 
 
