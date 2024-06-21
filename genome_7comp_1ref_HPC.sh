@@ -185,6 +185,7 @@ echo " "
 start=`date +%s`
 
 
+
 ######################################
 ## GET INPUT PARAMETERS
 DRAFT1="$1"		    	# Draft genome #1
