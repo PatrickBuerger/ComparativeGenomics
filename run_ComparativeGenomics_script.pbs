@@ -20,6 +20,7 @@ sh genome_7comp_1ref_HPC.sh \
         RagTag_SS9_clado_contigs_metaMDGB.fasta 5000000 \
         RagTag_WT_clado_contigs_metaMDGB.fasta 5000000 \
         RagTag_GCA_947184155.1_Cgoreaui_SCF055-01_genomic.fasta 5000000 5000 \
+        Genome_comparison_seq5000000 \
     | tee log_file.txt
 
 
