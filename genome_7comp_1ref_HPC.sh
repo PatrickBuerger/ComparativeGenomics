@@ -85,8 +85,8 @@ sleep 3
 ##       draft_genome5.fasta minimal_contig_length_5 \
 ##       draft_genome6.fasta minimal_contig_length_6 \
 ##       draft_genome7.fasta minimal_contig_length_7 \
-##       reference_genome.fasta minimal_contig_length_8 blast_parameter \    | tee log_file.txt
-   
+##       reference_genome.fasta minimal_contig_length_8 blast_parameter \    
+##       output_directory_name \    | tee log_file.txt   
    
 ### EXAMPLE        
 ## sh genome_comparison_7comps_with2Refs.sh \
@@ -97,8 +97,8 @@ sleep 3
 ##        SS3_clado_contigs_metaMDGB.fasta 500000 \
 ##        SS5_clado_contigs_metaMDGB.fasta 500000 \
 ##        SS9_clado_contigs_metaMDGB.fasta 500000 \
-##        GCA_947184155.1_Cgoreaui_SCF055-01_genomic.fna 500000 5000 \    | tee log_file.txt
-       
+##        GCA_947184155.1_Cgoreaui_SCF055-01_genomic.fna 500000 5000 \
+##        comparison1 \    | tee log_file.txt          
        
 
 ### INPUT PARAMETERS ARE:
@@ -127,6 +127,8 @@ sleep 3
 ## minimal_contig_length_8	= Anything below this threshold gets excluded to make the BLAST run faster.
 
 ## blast_parameter		= Word size blast parameter. Something between 2000 and 5000, higher requires more resources.
+
+## output_directory_name	= any folder name [Genome_comparison_DIRECTORY_DATE_TIME], if blank, it will be automatically set to Genome_comparison_DATE_TIME
 
 ## LOGFILE (| tee log_file.txt) = add this to the end of the command, to automatically save a logfile in the current directory.
 				 
@@ -164,7 +166,6 @@ sleep 3
 ## RAGTAG SETTINGS          # Available threads is currently set to 4
 ## BLAST SETTINGS           # Set the number of blast matches, keep at 5 for now to not make it overly complicated with the comparison
 
-OUTPUT_DIRECTORY="Genome_comparison"
 NUMBER_OF_CORES="4"
 WORD_SIZE_RAGTAG="5000"
 MAX_TARGET_SEQS="5"
@@ -214,6 +215,8 @@ PARAMETER8="${16}"		# Minimal contig length threshold for RagTag REFERENCE_GENOM
 
 PARAMETER9="${17}" 		# Blast word size
 
+OUTPUT_DIRECTORY="${18}"	# Output directory name
+
 
 
 ######################################
@@ -249,6 +252,7 @@ echo "Sequence threshold = "$PARAMETER8""
 echo " "
 echo "Blast word size = "$PARAMETER9""
 echo " "
+echo " Output directory name is: "$OUTPUT_DIRECTORY""
 echo "########################################################################"
 echo " "
 echo " "
