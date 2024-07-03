@@ -128,7 +128,7 @@ sleep 3
 
 ## blast_parameter		= Word size blast parameter. Something between 2000 and 5000, higher requires more resources.
 
-## output_directory_name	= any folder name [Genome_comparison_DIRECTORY_DATE_TIME], if blank, it will be automatically set to Genome_comparison_DATE_TIME
+## output_directory_name	= any folder name [output_directory_name_DIRECTORY_DATE_TIME]
 
 ## LOGFILE (| tee log_file.txt) = add this to the end of the command, to automatically save a logfile in the current directory.
 				 
