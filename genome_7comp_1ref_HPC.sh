@@ -1189,10 +1189,9 @@ echo " "
 
 ## Create the new script content
 # Replace modules and conda environment line according to your HPC
-SCRIPT_CONTENT="source /g/data/ey34/conda/conda-setup.sh && \
-    conda activate ragtag && \
-    module load blast && \
-    echo " "\
+SCRIPT_CONTENT="source /g/data/ey34/conda/conda-setup.sh \
+    conda activate ragtag \
+    module load blast \
     act ./1_RagTag_\"$DRAFT1\".gff \\
     ./1_RagTag_\"$DRAFT1\"_vs_\"$DRAFT2\"_\"$PARAMETER9\"_fmt6.crunch \\
     ./2_RagTag_\"$DRAFT2\".gff \\
