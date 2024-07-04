@@ -708,7 +708,7 @@ echo " "
 ######################
 ## COMPARE GENOMES WITH BLAST
 echo "# BLAST 1/6 RagTag "$DRAFT1""
-blastn -query ./SingleSeq_RagTag_"$DRAFT1" -db ./SingleSeq_RagTag_"$DRAFT2" -max_target_seqs "$MAX_TARGET_SEQS" -evalue 1 -task megablast -word_size "$PARAMETER9" -num_threads "$NUMBER_OF_CORES" -outfmt 6 > ./1_RagTag_"$DRAFT1"_vs_"$DRAFT2"_"$PARAMETER9"_fmt6.crunch
+blastn -query ./SingleSeq_RagTag_"$DRAFT1" -db ./SingleSeq_RagTag_"$DRAFT2" -max_target_seqs "$MAX_TARGET_SEQS" -evalue 0.01 -task megablast -word_size "$PARAMETER9" -num_threads "$NUMBER_OF_CORES" -outfmt 6 > ./1_RagTag_"$DRAFT1"_vs_"$DRAFT2"_"$PARAMETER9"_fmt6.crunch
 echo -n "Number of blast hits found -> " && cat ./1_RagTag_"$DRAFT1"_vs_"$DRAFT2"_"$PARAMETER9"_fmt6.crunch | wc -l
 echo "OUTPUT: 1_RagTag_"$DRAFT1"_vs_"$DRAFT2"_"$PARAMETER9"_fmt6.crunch"
 echo " "
@@ -716,7 +716,7 @@ echo " "
 ######################
 ## COMPARE GENOMES WITH BLAST
 echo "# BLAST 2/6 RagTag "$DRAFT2""
-blastn -query ./SingleSeq_RagTag_"$DRAFT2" -db ./SingleSeq_RagTag_"$DRAFT3" -max_target_seqs "$MAX_TARGET_SEQS" -evalue 1 -task megablast -word_size "$PARAMETER9" -num_threads "$NUMBER_OF_CORES" -outfmt 6 > ./2_RagTag_"$DRAFT2"_vs_"$DRAFT3"_"$PARAMETER9"_fmt6.crunch
+blastn -query ./SingleSeq_RagTag_"$DRAFT2" -db ./SingleSeq_RagTag_"$DRAFT3" -max_target_seqs "$MAX_TARGET_SEQS" -evalue 0.01 -task megablast -word_size "$PARAMETER9" -num_threads "$NUMBER_OF_CORES" -outfmt 6 > ./2_RagTag_"$DRAFT2"_vs_"$DRAFT3"_"$PARAMETER9"_fmt6.crunch
 echo -n "Number of blast hits found -> " && cat ./2_RagTag_"$DRAFT2"_vs_"$DRAFT3"_"$PARAMETER9"_fmt6.crunch | wc -l
 echo "OUTPUT: 2_RagTag_"$DRAFT2"_vs_"$DRAFT3"_"$PARAMETER9"_fmt6.crunch"
 echo " "
@@ -724,7 +724,7 @@ echo " "
 ######################
 ## COMPARE GENOMES WITH BLAST
 echo "# BLAST 3/6 RagTag "$DRAFT3""
-blastn -query ./SingleSeq_RagTag_"$DRAFT3" -db ./SingleSeq_RagTag_"$DRAFT4" -max_target_seqs "$MAX_TARGET_SEQS" -evalue 1 -task megablast -word_size "$PARAMETER9" -num_threads "$NUMBER_OF_CORES" -outfmt 6 > ./3_RagTag_"$DRAFT3"_vs_"$DRAFT4"_"$PARAMETER9"_fmt6.crunch
+blastn -query ./SingleSeq_RagTag_"$DRAFT3" -db ./SingleSeq_RagTag_"$DRAFT4" -max_target_seqs "$MAX_TARGET_SEQS" -evalue 0.01 -task megablast -word_size "$PARAMETER9" -num_threads "$NUMBER_OF_CORES" -outfmt 6 > ./3_RagTag_"$DRAFT3"_vs_"$DRAFT4"_"$PARAMETER9"_fmt6.crunch
 echo -n "Number of blast hits found -> " && cat ./3_RagTag_"$DRAFT3"_vs_"$DRAFT4"_"$PARAMETER9"_fmt6.crunch | wc -l
 echo "OUTPUT: 3_RagTag_"$DRAFT3"_vs_"$DRAFT4"_"$PARAMETER9"_fmt6.crunch"
 echo " "
@@ -732,7 +732,7 @@ echo " "
 ######################
 ## COMPARE GENOMES WITH BLAST
 echo "# BLAST 4/6 RagTag "$DRAFT5""
-blastn -query ./SingleSeq_RagTag_"$DRAFT5" -db ./SingleSeq_RagTag_"$DRAFT4" -max_target_seqs "$MAX_TARGET_SEQS" -evalue 1 -task megablast -word_size "$PARAMETER9" -num_threads "$NUMBER_OF_CORES" -outfmt 6 > ./4_RagTag_"$DRAFT5"_vs_"$DRAFT4"_"$PARAMETER9"_fmt6.crunch
+blastn -query ./SingleSeq_RagTag_"$DRAFT5" -db ./SingleSeq_RagTag_"$DRAFT4" -max_target_seqs "$MAX_TARGET_SEQS" -evalue 0.01 -task megablast -word_size "$PARAMETER9" -num_threads "$NUMBER_OF_CORES" -outfmt 6 > ./4_RagTag_"$DRAFT5"_vs_"$DRAFT4"_"$PARAMETER9"_fmt6.crunch
 echo -n "Number of blast hits found -> " && cat ./4_RagTag_"$DRAFT5"_vs_"$DRAFT4"_"$PARAMETER9"_fmt6.crunch | wc -l
 echo "OUTPUT: 4_RagTag_"$DRAFT5"_vs_"$DRAFT4"_"$PARAMETER9"_fmt6.crunch"
 echo " "
@@ -740,7 +740,7 @@ echo " "
 ######################
 ## COMPARE GENOMES WITH BLAST
 echo "# BLAST 5/6 RagTag "$DRAFT6""
-blastn -query ./SingleSeq_RagTag_"$DRAFT6" -db ./SingleSeq_RagTag_"$DRAFT5" -max_target_seqs "$MAX_TARGET_SEQS" -evalue 1 -task megablast -word_size "$PARAMETER9" -num_threads "$NUMBER_OF_CORES" -outfmt 6 > ./5_RagTag_"$DRAFT6"_vs_"$DRAFT5"_"$PARAMETER9"_fmt6.crunch
+blastn -query ./SingleSeq_RagTag_"$DRAFT6" -db ./SingleSeq_RagTag_"$DRAFT5" -max_target_seqs "$MAX_TARGET_SEQS" -evalue 0.01 -task megablast -word_size "$PARAMETER9" -num_threads "$NUMBER_OF_CORES" -outfmt 6 > ./5_RagTag_"$DRAFT6"_vs_"$DRAFT5"_"$PARAMETER9"_fmt6.crunch
 echo -n "Number of blast hits found -> " && cat ./5_RagTag_"$DRAFT6"_vs_"$DRAFT5"_"$PARAMETER9"_fmt6.crunch | wc -l
 echo "OUTPUT: 5_RagTag_"$DRAFT6"_vs_"$DRAFT5"_"$PARAMETER9"_fmt6.crunch"
 echo " "
@@ -748,7 +748,7 @@ echo " "
 ######################
 ## COMPARE GENOMES WITH BLAST
 echo "# BLAST 6/6 RagTag "$DRAFT7""
-blastn -query ./SingleSeq_RagTag_"$DRAFT7" -db ./SingleSeq_RagTag_"$DRAFT6" -max_target_seqs "$MAX_TARGET_SEQS" -evalue 1 -task megablast -word_size "$PARAMETER9" -num_threads "$NUMBER_OF_CORES" -outfmt 6 > ./6_RagTag_"$DRAFT7"_vs_"$DRAFT6"_"$PARAMETER9"_fmt6.crunch
+blastn -query ./SingleSeq_RagTag_"$DRAFT7" -db ./SingleSeq_RagTag_"$DRAFT6" -max_target_seqs "$MAX_TARGET_SEQS" -evalue 0.01 -task megablast -word_size "$PARAMETER9" -num_threads "$NUMBER_OF_CORES" -outfmt 6 > ./6_RagTag_"$DRAFT7"_vs_"$DRAFT6"_"$PARAMETER9"_fmt6.crunch
 echo -n "Number of blast hits found -> " && cat ./6_RagTag_"$DRAFT7"_vs_"$DRAFT6"_"$PARAMETER9"_fmt6.crunch | wc -l
 echo "OUTPUT: 6_RagTag_"$DRAFT7"_vs_"$DRAFT6"_"$PARAMETER9"_fmt6.crunch"
 
