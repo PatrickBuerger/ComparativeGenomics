@@ -1191,12 +1191,17 @@ echo " "
 #    ./6_RagTag_"$DRAFT7"_vs_"$DRAFT6"_"$PARAMETER9"_fmt6.crunch \
 #    ./7_RagTag_"$DRAFT7".gff 
 
+# Use interactive job to display artemis results
+# qsub -I -q gpuvolta -P rm18 -V -X -l walltime=00:10:00,ncpus=12,ngpus=1,mem=16GB,jobfs=50GB,storage=gdata/rm18+scratch/rm18+gdata/ey34,wd
 
 ## Create the new script content
 # Replace modules and conda environment line according to your HPC
 SCRIPT_CONTENT="source /g/data/ey34/conda/conda-setup.sh
 conda activate ragtag
 module load blast
+
+# Set Java heap size
+export _JAVA_OPTIONS="-Xmx16g"
 
 act ./1_RagTag_\"$DRAFT1\".gff \\
     ./1_RagTag_\"$DRAFT1\"_vs_\"$DRAFT2\"_\"$PARAMETER9\"_fmt6.crunch \\
