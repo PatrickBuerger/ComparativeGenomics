@@ -166,7 +166,7 @@ sleep 3
 ## RAGTAG SETTINGS          # Available threads is currently set to 4
 ## BLAST SETTINGS           # Set the number of blast matches, keep at 5 for now to not make it overly complicated with the comparison
 
-NUMBER_OF_CORES="8"
+NUMBER_OF_CORES="16"
 WORD_SIZE_RAGTAG="5000"
 MAX_TARGET_SEQS="10"
 
