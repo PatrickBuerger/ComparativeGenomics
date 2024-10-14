@@ -1191,11 +1191,8 @@ echo " "
 #    ./6_RagTag_"$DRAFT7"_vs_"$DRAFT6"_"$PARAMETER9"_fmt6.crunch \
 #    ./7_RagTag_"$DRAFT7".gff 
 
-# Use interactive job to display artemis results
-# qsub -I -q gpuvolta -P rm18 -V -X -l walltime=00:10:00,ncpus=12,ngpus=1,mem=16GB,jobfs=50GB,storage=gdata/rm18+scratch/rm18+gdata/ey34,wd
-
-## Create the new script content
-# Replace modules and conda environment line according to your HPC
+### Create the new script to visualise blast results and genomic comparisons
+## (Not requried: Replace modules and conda environment line according to your HPC)
 SCRIPT_CONTENT="source /g/data/ey34/conda/conda-setup.sh
 conda activate ragtag
 module load blast
@@ -1228,3 +1225,10 @@ chmod +x "$OUTPUT_FILE"
 
 # Optional: Print a message indicating the script was created
 echo "Script $OUTPUT_FILE created successfully. Go to output folder and run script for visuals."
+
+
+
+### TO RUN YOUR VISUALISATION START an interactive job to display artemis results
+# qsub -I -q gpuvolta -P rm18 -V -X -l walltime=00:10:00,ncpus=12,ngpus=1,mem=16GB,jobfs=50GB,storage=gdata/rm18+scratch/rm18+gdata/ey34,wd
+### Then execute the visualisation script, it will load Artemis automatically with the right files: 
+# ./artemis_visualisation_${OUTPUT_DIRECTORY}_${CURRENTDATE}.sh
