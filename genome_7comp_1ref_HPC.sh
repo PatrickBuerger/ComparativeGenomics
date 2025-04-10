@@ -1229,6 +1229,6 @@ echo "Script $OUTPUT_FILE created successfully. Go to output folder and run scri
 
 
 ### TO RUN YOUR VISUALISATION START an interactive job to display artemis results
-# qsub -I -q gpuvolta -P rm18 -V -X -l walltime=00:10:00,ncpus=12,ngpus=1,mem=16GB,jobfs=50GB,storage=gdata/rm18+scratch/rm18+gdata/ey34,wd
+# qsub -I -P rm18 -V -X -l walltime=00:15:00,ncpus=4,mem=16GB,jobfs=50GB,storage=gdata/rm18+scratch/rm18+gdata/ey34+scratch/ey34,wd
 ### Then execute the visualisation script, it will load Artemis automatically with the right files: 
 # ./artemis_visualisation_${OUTPUT_DIRECTORY}_${CURRENTDATE}.sh
