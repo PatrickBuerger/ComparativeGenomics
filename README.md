@@ -5,7 +5,6 @@ The script can be used to:
 - re-arrange scaffolds according to a reference (RagTag)
 - find genomic similarities (Blast)
 - visualise genomic comparisons (Artemis)
-<br>
 <br> 
 ___________________________________________________________________________________
 <br> 
