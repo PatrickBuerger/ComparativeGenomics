@@ -8,6 +8,7 @@ The script can be used to:
 <br>
 <br>  
 ___________________________________________________________________________________
+<br> 
 ## INSTALL REQUIRED SOFTWARE
 ### ARTEMIS 
 Install Artemis (for visualisation and genome broswing):
