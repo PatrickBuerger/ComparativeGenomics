@@ -7,7 +7,7 @@ The script can be used to:
 - visualise genomic comparisons (Artemis)
 <br>
 <br>  
-
+___________________________________________________________________________________
 ## INSTALL REQUIRED SOFTWARE
 ### ARTEMIS 
 Install Artemis (for visualisation and genome broswing):
