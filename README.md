@@ -6,8 +6,9 @@ The script can be used to:
 - find genomic similarities (Blast)
 - visualise genomic comparisons (Artemis)
 <br>
-<br>  
+<br> 
 ___________________________________________________________________________________
+<br> 
 <br> 
 ## INSTALL REQUIRED SOFTWARE
 ### ARTEMIS 
